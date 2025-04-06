@@ -8,7 +8,7 @@ public class CalculateMonthlyInterest {
 
 
     public static void main(String[] args) {
-        Scanner s=new  Scanner(System.in);
+        Scanner s=new  Scanner(System);
                 
                System.out.println("enter interest rate like as 12.5%");
                double interestRate=s.nextDouble();
