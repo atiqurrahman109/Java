@@ -9,19 +9,22 @@ public class CalculateAreaOfCircle {
    
     public static void main(String[] args) {
       
-        Scanner circle=new Scanner(System.in);
+        Scanner c=new Scanner(System.in);
         System.out.println("enter radious");
-        int numner=inew Scanner(System.in);
-        System.out.prnput.nextInt();
+        float input=c.nextFloat();
         
-       float result= (float)3.1416 *(numner*numner);
-        System.out.println(result);
-//            int radious=circle.nextInt();
+        if(radious>=0){
+            System.out.println("enter positive value");
+             input=c.nextFloat();
+             float result=Math.PI* Math.pow(radious, 2);       
+            System.out.println(""+result);     
+        }
+        else{
+            float result2 =Math.PI*Math.pow(radious, 2);
+            System.out.println(""+result2);
         
-        
-// float area=(float) (Math.PI*Math.pow(radious,2));
-                
-//        System.out.println("area of circle is "+ area);
+        }
+
     }
     
 }
